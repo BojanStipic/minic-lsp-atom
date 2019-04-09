@@ -1,0 +1,46 @@
+{
+  "name": "ide-minic",
+  "main": "lib/main.js",
+  "version": "1.0.0",
+  "description": "miniC language support for Atom-IDE.",
+  "repository": "https://github.com/BojanStipic/minic-lsp-atom",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "atom": ">=1.21.0"
+  },
+  "dependencies": {
+    "atom-languageclient": "^0.9.9"
+  },
+  "enhancedScopes": [
+    "source.c"
+  ],
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    },
+    "datatip": {
+      "versions": {
+        "0.1.0": "consumeDatatip"
+      }
+    }
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provideAutocomplete"
+      }
+    },
+    "definitions": {
+      "versions": {
+        "0.1.0": "provideDefinitions"
+      }
+    },
+    "find-references": {
+      "versions": {
+        "0.1.0": "provideFindReferences"
+      }
+    }
+  }
+}
