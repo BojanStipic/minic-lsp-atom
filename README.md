@@ -3,6 +3,8 @@
 Provides miniC language support for [Atom](https://atom.io/) using
 [minic-lsp language server](https://github.com/BojanStipic/minic-lsp).
 
+![Screenshot](screenshot.png)
+
 ## minic-lsp
 
 minic-lsp is a [Language Server](https://langserver.org/) implementation for the miniC programming language.
